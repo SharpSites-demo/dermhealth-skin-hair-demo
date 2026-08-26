@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DERMHealth Skin &amp; Hair Clinic — Dermatologist &amp; Trichologist, Kirti Nagar, Delhi</title>
+<meta name="description" content="DERMHealth Skin & Hair Clinic, Tagore Market, Kirti Nagar, Delhi — led by Dr Nikita Gandhi Sethi. Dermatology & trichology care. Rated 4.8 on Google.">
+<link rel="canonical" href="https://sharpsites-demo.github.io/dermhealth-skin-hair-demo/">
+<style>
+:root{
+  --ink:#1d2b26; --ink-2:#2e4038; --sage:#eef3ee; --sage-2:#dfe8df;
+  --cream:#faf7f0; --brass:#b08d3f; --brass-d:#8a6d2c; --line:#cfd9cf;
+  --white:#ffffff; --muted:#5c6b63;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;font-size:17px}
+img,svg{display:block;max-width:100%}
+a{color:var(--brass-d);text-decoration:none}
+a:focus-visible,button:focus-visible,.fab:focus-visible{outline:3px solid var(--brass);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1080px,92%);margin-inline:auto}
+h1,h2,h3,h4{line-height:1.15;font-weight:700;letter-spacing:-.01em}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--brass-d);font-weight:700}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--brass)}
+.ph{color:#8a6d2c;background:rgba(176,141,63,.12);border:1px dashed rgba(176,141,63,.5);border-radius:6px;padding:.15em .4em;font-size:.9em}
+.topbar{position:sticky;top:0;z-index:50;background:rgba(250,247,240,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;color:var(--ink)}
+.brand svg{width:34px;height:34px}
+nav ul{display:flex;gap:22px;list-style:none}
+nav a{font-size:15px;font-weight:600;color:var(--ink-2)}
+nav a:hover{color:var(--brass-d)}
+.nav-cta{background:var(--ink);color:var(--cream)!important;padding:10px 16px;border-radius:8px;font-size:14px}
+.hero{position:relative;background:linear-gradient(160deg,var(--sage) 0%,var(--cream) 60%);padding:64px 0 40px;overflow:hidden}
+.hero::before{content:"";position:absolute;right:-120px;top:-120px;width:min(420px,80vw);height:min(420px,80vw);border-radius:50%;background:radial-gradient(circle,rgba(176,141,63,.18),transparent 65%)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;position:relative}
+.hero h1{font-size:clamp(32px,5.4vw,54px);margin:16px 0 14px}
+.hero h1 .gold{color:var(--brass-d)}
+.hero p.lede{font-size:clamp(17px,2.2vw,20px);color:var(--ink-2);max-width:54ch}
+.hero .meta{display:flex;flex-wrap:wrap;gap:14px;margin:20px 0 26px;font-size:14px;color:var(--muted)}
+.hero .meta span{display:inline-flex;align-items:center;gap:6px}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px}
+.btn{display:inline-flex;align-items:center;gap:9px;min-height:48px;padding:13px 22px;border-radius:10px;font-weight:700;font-size:16px}
+.btn-primary{background:var(--ink);color:var(--cream)}
+.btn-primary:hover{background:var(--ink-2)}
+.btn-ghost{border:2px solid var(--ink);color:var(--ink)}
+.btn-ghost:hover{background:var(--sage-2)}
+.panel{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:26px;box-shadow:0 24px 50px -30px rgba(29,43,38,.45)}
+.panel h2{font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:var(--brass-d);margin-bottom:6px}
+.panel .big{font-size:40px;font-weight:800;color:var(--ink)}
+.panel .sub{color:var(--muted);font-size:14px}
+.ring{width:150px;height:150px;border-radius:50%;margin:14px auto;position:relative;display:grid;place-items:center}
+.ring svg{position:absolute;inset:0;transform:rotate(-90deg)}
+.ring .num{font-size:30px;font-weight:800;color:var(--ink)}
+.ring .of{font-size:12px;color:var(--muted)}
+.panel .stars{display:flex;justify-content:center;gap:4px;margin:8px 0}
+.panel .stars svg{width:22px;height:22px;fill:var(--brass)}
+.panel .rnote{text-align:center;font-size:13px;color:var(--muted)}
+.stats{background:var(--ink);color:var(--cream);padding:34px 0}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
+.stat .n{font-size:clamp(26px,4vw,38px);font-weight:800;color:var(--brass)}
+.stat .l{font-size:13px;color:#cfe0d6;letter-spacing:.06em;text-transform:uppercase}
+section{padding:64px 0}
+.sec-head{max-width:40rem;margin-bottom:36px}
+.sec-head h2{font-size:clamp(26px,4vw,38px);margin:12px 0 10px}
+.sec-head p{color:var(--muted);font-size:17px}
+.dual{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.card{border:1px solid var(--line);border-radius:16px;padding:26px;background:var(--white)}
+.card.derm{border-top:5px solid var(--brass)}
+.card.trich{border-top:5px solid var(--ink-2)}
+.card h3{font-size:22px;margin:12px 0 8px}
+.card .tag{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--brass-d);font-weight:700}
+.card p{color:var(--muted);font-size:16px}
+.card ul{list-style:none;margin-top:14px}
+.card li{display:flex;gap:10px;align-items:flex-start;padding:7px 0;border-bottom:1px dashed var(--line);font-size:15.5px}
+.card li svg{width:20px;height:20px;flex:none;margin-top:2px}
+.card li:last-child{border-bottom:none}
+.ladder{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.step{background:var(--sage);border:1px solid var(--line);border-radius:14px;padding:22px;position:relative}
+.step .no{font-size:13px;font-weight:800;color:var(--brass-d);letter-spacing:.1em}
+.step h3{font-size:18px;margin:8px 0 6px}
+.step p{font-size:15px;color:var(--muted)}
+.step ul{list-style:none;margin-top:10px;font-size:14.5px;color:var(--ink-2)}
+.step li{padding:4px 0;border-bottom:1px dashed var(--line)}
+.step li:last-child{border:none}
+.about{background:var(--sage)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
+.about .lead{font-size:19px;color:var(--ink-2);font-weight:600}
+.about ul{list-style:none;margin-top:16px}
+.about li{display:flex;gap:10px;padding:9px 0;border-bottom:1px dashed var(--line);font-size:16px}
+.about li svg{width:21px;height:21px;flex:none;margin-top:2px}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.rev{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:20px}
+.rev .stars{display:flex;gap:3px;margin-bottom:8px}
+.rev .stars svg{width:16px;height:16px;fill:var(--brass)}
+.rev p{font-size:15px;color:var(--ink-2);font-style:italic}
+.rev .who{margin-top:10px;font-size:13px;color:var(--muted);font-weight:600}
+.expect{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.expect .x{display:flex;gap:14px;background:var(--white);border:1px solid var(--line);border-radius:12px;padding:18px}
+.expect .x svg{width:26px;height:26px;flex:none;color:var(--brass-d)}
+.expect .x h3{font-size:16px}
+.expect .x p{font-size:14.5px;color:var(--muted)}
+.loc{background:var(--ink);color:var(--cream)}
+.loc .sec-head h2{color:var(--cream)}
+.loc .sec-head p{color:#cfe0d6}
+.loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start}
+.map-ph{background:rgba(255,255,255,.06);border:2px dashed rgba(176,141,63,.6);border-radius:14px;min-height:260px;display:grid;place-items:center;text-align:center;padding:30px;color:#cfe0d6;font-size:16px}
+.info li{display:flex;gap:12px;padding:10px 0;border-bottom:1px dashed rgba(255,255,255,.18);list-style:none;font-size:16px}
+.info li svg{width:22px;height:22px;flex:none;color:var(--brass);margin-top:2px}
+.info ul{list-style:none}
+.hours{display:grid;grid-template-columns:1fr 1fr;gap:4px 20px;font-size:15px}
+.hours .d{color:#cfe0d6}
+.hours .closed{color:var(--cream)}
+footer{background:#16201b;color:#cfe0d6;padding:40px 0 90px;font-size:14.5px}
+.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}
+.foot h4{color:var(--cream);margin-bottom:10px;font-size:15px}
+.foot a{color:#cfe0d6}
+.foot a:hover{color:var(--brass)}
+.foot ul{list-style:none}
+.foot li{padding:4px 0}
+.copy{margin-top:26px;padding-top:18px;border-top:1px solid rgba(255,255,255,.12);font-size:13px;color:#cfe0d6}
+.fab{position:fixed;right:18px;bottom:18px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 24px rgba(0,0,0,.28)}
+.fab svg{width:32px;height:32px;fill:#fff}
+@media(max-width:51.25rem){
+  .hero-grid,.about-grid,.loc-grid{grid-template-columns:1fr}
+  .dual,.expect{grid-template-columns:1fr}
+  .ladder,.rev-grid{grid-template-columns:1fr}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  nav ul{display:none}
+  .foot{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<header id="top">
+  <div class="topbar">
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="DERMHealth home">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--brass-d)" stroke-width="1.6" aria-hidden="true"><path d="M12 3c1.8 2 3 4.4 3 7a3 3 0 1 1-6 0c0-2.6 1.2-5 3-7Z"/><path d="M4 21c2-1.5 4.5-2.5 8-2.5s6 1 8 2.5"/></svg>
+        DERMHealth <span style="color:var(--brass-d)">Skin &amp; Hair</span>
+      </a>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="#care">Care</a></li>
+          <li><a href="#journey">Journey</a></li>
+          <li><a href="#doctor">Doctor</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#visit">Visit</a></li>
+        </ul>
+      </nav>
+      <a class="nav-cta" href="https://wa.me/919910935102" target="_blank" rel="noopener">Book on WhatsApp</a>
+    </div>
+  </div>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">Dermatology · Trichology · Cosmetology</span>
+        <h1>Skin &amp; hair care, <span class="gold">rooted in science</span> and delivered with warmth.</h1>
+        <p class="lede">DERMHealth Skin &amp; Hair Clinic, led by Dr Nikita Gandhi Sethi, brings comprehensive dermatology and trichology care to Kirti Nagar, New Delhi — since 2015.</p>
+        <div class="meta">
+          <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>Tagore Market, Kirti Nagar, Delhi</span>
+          <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Mon–Sat, 9 AM – 7 PM</span>
+          <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8Z"/></svg>4.8 · 227 Google reviews</span>
+        </div>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://wa.me/919910935102" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.4 14.1c-.2.6-1.2 1.2-1.7 1.2-.4.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.5-2.6-1.1-4.3-3.7-4.4-3.9-.1-.2-1.1-1.4-1.1-2.7s.7-1.9.9-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2.1 1c.3.2.5.2.6.4.1.1.1.7-.1 1.3Z"/></svg>
+            Book a consultation
+          </a>
+          <a class="btn btn-ghost" href="#care">Explore care</a>
+        </div>
+      </div>
+      <div class="panel" data-hero>
+        <h2>Patient rating</h2>
+        <div class="ring">
+          <svg viewBox="0 0 150 150" aria-hidden="true">
+            <circle cx="75" cy="75" r="66" fill="none" stroke="var(--sage-2)" stroke-width="12"/>
+            <circle class="ring-fill" cx="75" cy="75" r="66" fill="none" stroke="var(--brass)" stroke-width="12" stroke-linecap="round" stroke-dasharray="414.7" stroke-dashoffset="414.7"/>
+          </svg>
+          <div class="num">4.8<span class="of">/5</span></div>
+        </div>
+        <div class="stars" aria-label="Rated 4.8 out of 5">
+          <svg viewBox="0 0 24 24"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8Z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8Z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8Z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8Z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8Z"/></svg>
+        </div>
+        <p class="rnote">Based on 227 Google reviews · <span class="ph">[Add real patient photos]</span></p>
+      </div>
+    </div>
+  </section>
+</header>
+
+<main>
+<section class="stats" aria-label="Clinic highlights">
+  <div class="wrap stats-grid">
+    <div class="stat" data-count><div class="n" data-n="2015">0</div><div class="l">Established</div></div>
+    <div class="stat" data-count><div class="n" data-n="227">0</div><div class="l">Google reviews</div></div>
+    <div class="stat" data-count><div class="n" data-n="4.8">0</div><div class="l">Star rating</div></div>
+    <div class="stat" data-count><div class="n" data-n="10">0</div><div class="l">Years of practice</div></div>
+  </div>
+</section>
+
+<section id="care">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Two disciplines, one clinic</span>
+      <h2>Dermatology &amp; trichology under one roof</h2>
+      <p>Your skin and your hair are treated as one connected system — with personalised, science-backed care. <span class="ph">___ Add your real clinic story ___</span></p>
+    </div>
+    <div class="dual">
+      <div class="card derm">
+        <span class="tag">Dermatology</span>
+        <h3>Skin &amp; nail care</h3>
+        <p>Comprehensive medical and cosmetic dermatology for a wide range of skin and nail concerns.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--brass-d)" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Acne, pigmentation &amp; scars</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--brass-d)" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Eczema, psoriasis &amp; allergies</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--brass-d)" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Cosmetic dermatology &amp; procedures</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--brass-d)" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Nail disorders</li>
+          <li><span class="ph">[Add treatment details]</span></li>
+        </ul>
+      </div>
+      <div class="card trich">
+        <span class="tag">Trichology</span>
+        <h3>Hair &amp; scalp care</h3>
+        <p>Focused trichology for hair loss, thinning and scalp conditions — assessed and treated with care.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--ink-2)" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Hair fall &amp; thinning</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--ink-2)" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Scalp conditions &amp; dandruff</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--ink-2)" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Hair regrowth programmes</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--ink-2)" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Personalised hair care plans</li>
+          <li><span class="ph">[Add treatment details]</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="journey" style="background:var(--sage)">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">The treatment ladder</span>
+      <h2>From first consultation to lasting results</h2>
+      <p>A clear, step-by-step path so you always know what happens next. <span class="ph">___ Add your real process ___</span></p>
+    </div>
+    <div class="ladder">
+      <div class="step"><div class="no">STEP 01</div><h3>Consultation</h3><p>A detailed discussion of your skin and hair concerns.</p><ul><li>History &amp; examination</li><li>Honest guidance</li></ul></div>
+      <div class="step"><div class="no">STEP 02</div><h3>Diagnosis</h3><p>Accurate assessment to find the root cause.</p><ul><li>Personalised plan</li><li>Clear explanation</li></ul></div>
+      <div class="step"><div class="no">STEP 03</div><h3>Treatment</h3><p>Science-backed care, tailored to you.</p><ul><li>Medical &amp; cosmetic options</li><li>Ongoing support</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="doctor">
+  <div class="wrap about-grid">
+    <div>
+      <span class="eyebrow">About the clinic</span>
+      <h2 style="font-size:clamp(26px,4vw,38px);margin:12px 0 10px">Personalised care, science-backed innovation</h2>
+      <p class="lead">"Our motto is to provide personalised care with science-backed innovations in skin, hair and nail."</p>
+      <p style="color:var(--muted);margin-top:12px">Established in 2015, DERMHealth is led by Dr Nikita Gandhi Sethi — a recipient of the Dr A.S. Thambiah Gold Medal for excellence in Dermatology. <span class="ph">___ Add your real clinic story ___</span></p>
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--brass-d)" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>MBBS, Maulana Azad Medical College</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--brass-d)" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>MD, Lady Hardinge Medical College</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--brass-d)" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Dr A.S. Thambiah Gold Medal, Dermatology</li>
+        <li><span class="ph">[Add doctor's qualifications]</span></li>
+      </ul>
+    </div>
+    <div class="panel" data-doctor>
+      <h3>Dr Nikita Gandhi Sethi</h3>
+      <p style="color:var(--muted);font-size:15px">Dermatologist &amp; Founder — DERMHealth</p>
+      <div style="margin-top:16px;font-size:15px;color:var(--ink-2)">
+        <p>Experience across leading institutions including Max Superspeciality Hospitals, Kalawati Hospital and Kaya Skin Clinics.</p>
+        <p style="margin-top:10px"><span class="ph">[Add doctor's photo &amp; full profile]</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" style="background:var(--sage)">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Patient voices</span>
+      <h2>What patients say</h2>
+      <p>Rated 4.8 out of 5 across 227 Google reviews. <span class="ph">[Add real Google reviews]</span></p>
+    </div>
+    <div class="rev-grid">
+      <div class="rev"><div class="stars"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8Z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8Z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8Z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8Z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8Z"/></svg></div><p>"I consulted Dr Nikita just two months before my wedding due to a facial mishap and she turned out to be my saviour."</p><div class="who">Google review · 5★</div></div>
+      <div class="rev"><div class="stars"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8Z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8Z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8Z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8Z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8Z"/></svg></div><p>"Dr Nikita's diagnosis is excellent. She is very warm, polite and intelligent."</p><div class="who">Google review · 5★</div></div>
+      <div class="rev"><div class="stars"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8Z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8Z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8Z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8Z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8Z"/></svg></div><p>"I've been visiting DERMHealth for a few months now, and my experience has been wonderful. The doctor takes the time to truly listen."</p><div class="who">Google review · 5★</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="expect">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">What to expect</span>
+      <h2>Your first visit</h2>
+      <p>Consultations focus on understanding, not rushing. <span class="ph">___ Add your real consultation details ___</span></p>
+    </div>
+    <div class="expect">
+      <div class="x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><h3>Time to talk</h3><p>Your concerns are heard fully before any plan is made.</p></div></div>
+      <div class="x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg><div><h3>Clear diagnosis</h3><p>You leave understanding your condition and the options.</p></div></div>
+      <div class="x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3l1.9 4.8L19 9l-4.6 3.2L15.8 17 12 14.4 8.2 17l1.4-4.8L5 9l5.1-1.2Z"/></svg><div><h3>Personalised plan</h3><p>Care is tailored to your skin, hair and lifestyle.</p></div></div>
+      <div class="x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8Z"/></svg><div><h3>Ongoing support</h3><p>Follow-up and guidance as your treatment progresses.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="visit" class="loc">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Find us</span>
+      <h2>Visit DERMHealth</h2>
+      <p>Ground Floor, Tagore Market, Kirti Nagar, New Delhi.</p>
+    </div>
+    <div class="loc-grid">
+      <div class="map-ph">[Add a Google Maps embed]<br><span style="font-size:14px;color:#cfe0d6">Interactive map will appear here</span></div>
+      <div>
+        <ul class="info">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Ground Floor, Tagore Market, B-12, Black B, Namdhari Colony, Kirti Nagar, Delhi 110015</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z"/></svg><a href="tel:+919910935102">+91 99109 35102</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Z"/></svg><a href="https://wa.me/919910935102" target="_blank" rel="noopener">Chat on WhatsApp</a></li>
+        </ul>
+        <h3 style="margin:18px 0 8px;color:var(--cream);font-size:16px">Opening hours</h3>
+        <div class="hours">
+          <span class="d">Monday</span><span>9 AM – 7 PM</span>
+          <span class="d">Tuesday</span><span>9 AM – 7 PM</span>
+          <span class="d">Wednesday</span><span>9 AM – 7 PM</span>
+          <span class="d">Thursday</span><span>9 AM – 7 PM</span>
+          <span class="d">Friday</span><span>9 AM – 7 PM</span>
+          <span class="d">Saturday</span><span>9 AM – 7 PM</span>
+          <span class="d">Sunday</span><span class="closed">Closed</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <h4>DERMHealth Skin &amp; Hair Clinic</h4>
+        <p>Dermatology &amp; trichology care in Kirti Nagar, New Delhi — led by Dr Nikita Gandhi Sethi.</p>
+        <p style="margin-top:10px"><span class="ph">[Add real clinic photos]</span></p>
+      </div>
+      <div>
+        <h4>Care</h4>
+        <ul><li><a href="#care">Dermatology</a></li><li><a href="#care">Trichology</a></li><li><a href="#journey">Treatment journey</a></li><li><a href="#doctor">About the doctor</a></li></ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul><li><a href="tel:+919910935102">+91 99109 35102</a></li><li><a href="https://wa.me/919910935102" target="_blank" rel="noopener">WhatsApp</a></li><li><a href="#visit">Tagore Market, Kirti Nagar</a></li></ul>
+      </div>
+    </div>
+    <div class="copy">© 2026 DERMHealth Skin &amp; Hair Clinic · Demo website by SharpSites · <span class="ph">[Add real content]</span></div>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/919910935102" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.4 14.1c-.2.6-1.2 1.2-1.7 1.2-.4.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.5-2.6-1.1-4.3-3.7-4.4-3.9-.1-.2-1.1-1.4-1.1-2.7s.7-1.9.9-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2.1 1c.3.2.5.2.6.4.1.1.1.7-.1 1.3Z"/></svg>
+</a>
+
+<script>
+(function(){
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce) return;
+  var g = window.gsap, st = window.ScrollTrigger;
+  if (!g || !st) return;
+  g.registerPlugin(st);
+  g.timeline({defaults:{ease:'power3.out'}})
+    .from('.hero-copy > *',{y:26,opacity:0,stagger:.12,duration:.7})
+    .from('[data-hero]',{y:34,opacity:0,scale:.96,duration:.8},'-=.4')
+    .to('.ring-fill',{strokeDashoffset:0,duration:1.4,ease:'power2.inOut'},'-=.6');
+  g.utils.toArray('[data-count]').forEach(function(el){
+    var n = el.querySelector('.n');
+    var target = parseFloat(n.getAttribute('data-n'));
+    var dec = (target % 1 !== 0) ? 1 : 0;
+    g.fromTo(n,{innerText:0},{innerText:target,duration:1.6,ease:'power1.out',snap:{innerText:1},
+      onUpdate:function(){n.textContent = target.toFixed(dec);}});
+  });
+  g.utils.toArray('.card,.step,.rev,.x,.stat').forEach(function(el){
+    g.from(el,{y:30,opacity:0,duration:.7,ease:'power2.out',scrollTrigger:{trigger:el,start:'top 88%'}});
+  });
+  g.from('.about-grid > *',{x:function(i){return i?40:-40;},opacity:0,duration:.8,ease:'power2.out',scrollTrigger:{trigger:'#doctor',start:'top 80%'}});
+  g.from('.loc-grid > *',{y:34,opacity:0,duration:.7,stagger:.15,scrollTrigger:{trigger:'#visit',start:'top 82%'}});
+})();
+</script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"MedicalClinic",
+  "name":"DERMHealth Skin & Hair Clinic",
+  "medicalSpecialty":"Dermatology",
+  "address":{"@type":"PostalAddress","streetAddress":"Ground Floor, Tagore Market, B-12, Black B, Namdhari Colony","addressLocality":"Kirti Nagar","addressRegion":"Delhi","postalCode":"110015","addressCountry":"IN"},
+  "telephone":"+919910935102",
+  "openingHours":["Mo-Sa 09:00-19:00"],
+  "geo":{"@type":"GeoCoordinates","latitude":28.654151,"longitude":77.1366579},
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"227"},
+  "foundingDate":"2015",
+  "founder":{"@type":"Person","name":"Dr Nikita Gandhi Sethi"}
+}
+</script>
+</body>
+</html>
